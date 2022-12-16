@@ -56,7 +56,8 @@ app.post("/results", (req, res) => {
                 variables.answer = "not";
                 fetch(`https://api.api-ninjas.com/v1/holidays?country=us&year=${year}`, { 
                     headers: {
-                        'X-Api-Key': '5/tCIQc+7SX8RA9P3idONg==tf0Olzga4JPAyvD8'
+                        'X-Api-Key': '5/tCIQc+7SX8RA9P3idONg==tf0Olzga4JPAyvD8',
+                        'X-RapidAPI-Host': 'holidays-by-api-ninjas.p.rapidapi.com'
                     }})
                     .then(res => res.json())
                     .then(json => {
